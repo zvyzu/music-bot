@@ -1,12 +1,12 @@
 module.exports = {
     app: {
         token: process.env.DISCORD_TOKEN || 'xxx',
-        playing: 'by the Community ❤️',
+        playing: 'Honkai: Star Rail',
         global: true,
         guild: process.env.GUILD_ID || 'xxx',
         extraMessages: false,
         loopMessage: false,
-        lang: 'en',
+        lang: 'id',
         enableEmojis: false,
     },
 
