@@ -1,11 +1,12 @@
 FROM node:lts-alpine3.20
 
-RUN apk add --no-cache ffmpeg yarn python3 make
+VOLUME /home/node/app
 
 WORKDIR /home/node/app
 
 COPY . ./home/node/app
 
-RUN yarn install
+RUN apk add ffmpeg yarn python3 make && \
+    cd /home/node/app && yarn install
 
 CMD ["node", "main.js"]
