@@ -4,7 +4,7 @@ RUN apk add --no-cache ffmpeg yarn
 
 WORKDIR /home/node/app
 
-COPY * ./home/node/app
+COPY . ./home/node/app
 
 RUN yarn install
 
